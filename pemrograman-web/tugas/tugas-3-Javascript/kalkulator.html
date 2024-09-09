@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Kalkulator Sederhana</h2>
+
+        <!-- Input untuk bilangan 1 -->
+        <label for="bil1">Bil 1:</label>
+        <input type="number" id="bil1" required>
+
+        <!-- Input untuk bilangan 2 -->
+        <label for="bil2">Bil 2:</label>
+        <input type="number" id="bil2" required>
+
+        <!-- Input untuk hasil -->
+        <label for="hasil">Hasil:</label>
+        <input type="text" id="hasil" disabled>
+
+        <!-- Tombol operasi -->
+        <div class="buttons">
+            <button onclick="hitung('+')">+</button>
+            <button onclick="hitung('-')">-</button>
+            <button onclick="hitung('*')">x</button>
+            <button onclick="hitung('/')">/</button>
+        </div>
+    </div>
+
+    <script>
+        function hitung(operator) {
+            let bil1 = parseFloat(document.getElementById('bil1').value);
+            let bil2 = parseFloat(document.getElementById('bil2').value);
+            let hasil;
+
+            if (isNaN(bil1) || isNaN(bil2)) {
+                alert("Masukkan kedua bilangan!");
+                return;
+            }
+
+            switch (operator) {
+                case '+':
+                    hasil = bil1 + bil2;
+                    break;
+                case '-':
+                    hasil = bil1 - bil2;
+                    break;
+                case '*':
+                    hasil = bil1 * bil2;
+                    break;
+                case '/':
+                    if (bil2 === 0) {
+                        alert("Pembagi tidak boleh nol!");
+                        return;
+                    }
+                    hasil = bil1 / bil2;
+                    break;
+            }
+
+            document.getElementById('hasil').value = hasil;
+        }
+    </script>
+</body>
+</html>
