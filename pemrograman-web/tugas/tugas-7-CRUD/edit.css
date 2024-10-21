@@ -1,0 +1,86 @@
+*, body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    background-color: azure;
+    width: 300px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    border-bottom: double;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+table.form{
+    text-align: left;
+}
+
+select{
+    padding: 3px 5px;
+    width: 165px;
+}
+
+input{
+    padding: 3px 5px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th.table, td.table{
+    border: 1px solid;
+    padding: 3px 5px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+button.update {
+    font-size: 18px; 
+    font-weight: 500;
+    padding: 5px 10px;
+    background-color: #4c4eaf; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    margin: 3px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.update:hover {
+    background-color: #6b84db;
+}
+
+button.kembali {
+    font-size: 18px; 
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #bb0000; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    margin: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.kembali:hover {
+    background-color: #ff0000;
+}

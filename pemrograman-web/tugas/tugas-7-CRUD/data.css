@@ -1,0 +1,107 @@
+*, body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.container1{
+    background-color: azure;
+    width: 1050px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    border-bottom: double;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th.table, td.table{
+    border: 1px solid;
+    padding: 3px 5px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+button.edit {
+    font-size: 18px; 
+    font-weight: 500;
+    padding: 5px 10px;
+    background-color: #4c4eaf; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    margin: 5px 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.edit:hover {
+    background-color: #6b84db;
+}
+
+button.input {
+    font-size: 18px; 
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #4c4eaf; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    margin: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.input:hover {
+    background-color: #6b84db;
+}
+
+button.logout {
+    font-size: 18px; 
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #bb0000; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    margin: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.logout:hover {
+    background-color: #ff0000;
+}
+
+button.delete {
+    font-size: 18px; 
+    font-weight: 500;
+    padding: 5px 10px;
+    background-color: #bb0000; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    margin: 5px 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.delete:hover {
+    background-color: #ff0000;
+}
